@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--My Table View Controller-->
         <scene sceneID="Eak-81-L7x">
             <objects>
                 <tableViewController id="yNu-bB-Kn8" customClass="MyTableViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,6 +45,7 @@
                                 <connections>
                                     <outlet property="address" destination="rAF-Zh-iOp" id="vKJ-bx-ohU"/>
                                     <outlet property="name" destination="Ii4-si-56m" id="BUm-70-iAn"/>
+                                    <segue destination="2VH-gI-YuH" kind="show" identifier="detailMapview" id="dei-I3-j7a"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -52,11 +54,46 @@
                             <outlet property="delegate" destination="yNu-bB-Kn8" id="3Bt-RC-qyd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="xNI-6G-qrs"/>
+                    <navigationItem key="navigationItem" id="xNI-6G-qrs">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Gox-rU-QtA"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DoC-sd-O5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079" y="-149"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="Q5m-Wx-Oa7">
+            <objects>
+                <viewController id="2VH-gI-YuH" customClass="MapViewController" customModule="Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mwC-tg-KMg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7tI-IZ-rFk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7tI-IZ-rFk" firstAttribute="top" secondItem="1b5-sJ-yq2" secondAttribute="top" id="BqK-UI-jA0"/>
+                            <constraint firstItem="7tI-IZ-rFk" firstAttribute="leading" secondItem="mwC-tg-KMg" secondAttribute="leading" id="Lxh-nG-mN4"/>
+                            <constraint firstItem="7tI-IZ-rFk" firstAttribute="bottom" secondItem="1b5-sJ-yq2" secondAttribute="bottom" id="cpq-L2-Lhb"/>
+                            <constraint firstItem="7tI-IZ-rFk" firstAttribute="top" secondItem="1b5-sJ-yq2" secondAttribute="top" id="ji0-nC-BZI"/>
+                            <constraint firstItem="1b5-sJ-yq2" firstAttribute="trailing" secondItem="7tI-IZ-rFk" secondAttribute="trailing" id="n90-Ur-zgr"/>
+                            <constraint firstItem="7tI-IZ-rFk" firstAttribute="leading" secondItem="1b5-sJ-yq2" secondAttribute="leading" id="olg-q5-RQd"/>
+                            <constraint firstItem="1b5-sJ-yq2" firstAttribute="bottom" secondItem="7tI-IZ-rFk" secondAttribute="bottom" id="tcw-et-KGW"/>
+                            <constraint firstItem="1b5-sJ-yq2" firstAttribute="trailing" secondItem="7tI-IZ-rFk" secondAttribute="trailing" id="toZ-9m-2gf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1b5-sJ-yq2"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailMapview" destination="7tI-IZ-rFk" id="WJF-Qx-mlb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jQm-F8-aC7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="-154.27286356821591"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="yvS-TH-DcW">

@@ -14,6 +14,8 @@
 		C562BCB220D8CDAD0046B875 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCB120D8CDAD0046B875 /* MyTableViewController.swift */; };
 		C562BCB420D8CDC10046B875 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCB320D8CDC10046B875 /* FoodStoreTableViewCell.swift */; };
 		C562BCB620D8CDCC0046B875 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCB520D8CDCC0046B875 /* Food.swift */; };
+		C562BCB920D8D9660046B875 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C562BCB820D8D9660046B875 /* MapKit.framework */; };
+		C562BCBB20D8D9E50046B875 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCBA20D8D9E50046B875 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		C562BCB120D8CDAD0046B875 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
 		C562BCB320D8CDC10046B875 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
 		C562BCB520D8CDCC0046B875 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		C562BCB820D8D9660046B875 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C562BCBA20D8D9E50046B875 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C562BCB920D8D9660046B875 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			children = (
 				C562BC9E20D8CBF40046B875 /* Test */,
 				C562BC9D20D8CBF40046B875 /* Products */,
+				C562BCB720D8D9660046B875 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +72,17 @@
 				C562BCAB20D8CBF40046B875 /* Info.plist */,
 				C562BCB120D8CDAD0046B875 /* MyTableViewController.swift */,
 				C562BCB520D8CDCC0046B875 /* Food.swift */,
+				C562BCBA20D8D9E50046B875 /* MapViewController.swift */,
 			);
 			path = Test;
+			sourceTree = "<group>";
+		};
+		C562BCB720D8D9660046B875 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C562BCB820D8D9660046B875 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +160,7 @@
 				C562BCB220D8CDAD0046B875 /* MyTableViewController.swift in Sources */,
 				C562BCB620D8CDCC0046B875 /* Food.swift in Sources */,
 				C562BCA020D8CBF40046B875 /* AppDelegate.swift in Sources */,
+				C562BCBB20D8D9E50046B875 /* MapViewController.swift in Sources */,
 				C562BCB420D8CDC10046B875 /* FoodStoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
