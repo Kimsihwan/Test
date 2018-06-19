@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C562BCA020D8CBF40046B875 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BC9F20D8CBF40046B875 /* AppDelegate.swift */; };
-		C562BCA220D8CBF40046B875 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCA120D8CBF40046B875 /* ViewController.swift */; };
 		C562BCA520D8CBF40046B875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C562BCA320D8CBF40046B875 /* Main.storyboard */; };
 		C562BCA720D8CBF40046B875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C562BCA620D8CBF40046B875 /* Assets.xcassets */; };
 		C562BCAA20D8CBF40046B875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C562BCA820D8CBF40046B875 /* LaunchScreen.storyboard */; };
+		C562BCB220D8CDAD0046B875 /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCB120D8CDAD0046B875 /* MyTableViewController.swift */; };
+		C562BCB420D8CDC10046B875 /* FoodStoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCB320D8CDC10046B875 /* FoodStoreTableViewCell.swift */; };
+		C562BCB620D8CDCC0046B875 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = C562BCB520D8CDCC0046B875 /* Food.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C562BC9C20D8CBF40046B875 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C562BC9F20D8CBF40046B875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C562BCA120D8CBF40046B875 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C562BCA420D8CBF40046B875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C562BCA620D8CBF40046B875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C562BCA920D8CBF40046B875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C562BCAB20D8CBF40046B875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C562BCB120D8CDAD0046B875 /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
+		C562BCB320D8CDC10046B875 /* FoodStoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodStoreTableViewCell.swift; sourceTree = "<group>"; };
+		C562BCB520D8CDCC0046B875 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				C562BC9F20D8CBF40046B875 /* AppDelegate.swift */,
-				C562BCA120D8CBF40046B875 /* ViewController.swift */,
+				C562BCB320D8CDC10046B875 /* FoodStoreTableViewCell.swift */,
 				C562BCA320D8CBF40046B875 /* Main.storyboard */,
 				C562BCA620D8CBF40046B875 /* Assets.xcassets */,
 				C562BCA820D8CBF40046B875 /* LaunchScreen.storyboard */,
 				C562BCAB20D8CBF40046B875 /* Info.plist */,
+				C562BCB120D8CDAD0046B875 /* MyTableViewController.swift */,
+				C562BCB520D8CDCC0046B875 /* Food.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C562BCA220D8CBF40046B875 /* ViewController.swift in Sources */,
+				C562BCB220D8CDAD0046B875 /* MyTableViewController.swift in Sources */,
+				C562BCB620D8CDCC0046B875 /* Food.swift in Sources */,
 				C562BCA020D8CBF40046B875 /* AppDelegate.swift in Sources */,
+				C562BCB420D8CDC10046B875 /* FoodStoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
