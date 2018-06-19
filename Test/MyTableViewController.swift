@@ -11,10 +11,13 @@ import UIKit
 class MyTableViewController: UITableViewController {
     
     
-    var fooodStores:[Food] = [
-        Food(name: "늘해랑", address: "부산광역시 부산진구 양정1동 350-1"),
-        Food(name: "번개반점", address: "부산광역시 부산진구 양정동 418-282")
-    ]
+//    var fooodStores:[Food] = [
+//        Food(name: "늘해랑", address: "부산광역시 부산진구 양정1동 350-1"),
+//        Food(name: "번개반점", address: "부산광역시 부산진구 양정동 418-282")
+//    ]
+    
+    var foodStoreNames = ["늘해랑", "번개반점"]
+    var foodStoreAddress = ["부산광역시 부산진구 양정1동 350-1", "부산광역시 부산진구 양정동 418-282"]
     
 
     override func viewDidLoad() {
@@ -31,15 +34,19 @@ class MyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fooodStores.count
+        //return fooodStores.count
+        return foodStoreNames.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath) as! FoodStoreTableViewCell
         
-        cell.name.text = fooodStores[indexPath.row].name
-        cell.address.text = fooodStores[indexPath.row].address
+//        cell.name.text = fooodStores[indexPath.row].name
+//        cell.address.text = fooodStores[indexPath.row].address
+        
+        cell.name.text = foodStoreNames[indexPath.row]
+        cell.address.text = foodStoreAddress[indexPath.row]
 
         return cell
     }
